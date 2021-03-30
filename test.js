@@ -1,5 +1,5 @@
-const bttn = document.querySelector('#btn')
-const para = document.querySelector('#text')
+// const bttn = document.querySelector('#btn')
+const para = document.getElementById('text')
 
 para.innerHTML = 'hello'
 
