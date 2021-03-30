@@ -1,3 +1,4 @@
-const bttn = document.querySelector('#btn')
+let bttn = document.querySelector('#btn')
+const para = document.querySelector('#text')
 
-bttn.addEventListener('click', body.style.backgroundColor='red')
+bttn.addEventListener('click', para.innerHTML='clicked')
