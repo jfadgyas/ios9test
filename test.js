@@ -3,5 +3,4 @@ const para = document.getElementById('text')
 
 para.innerHTML = 'hello'
 
-
-document.querySelector('#btn').onclick = para.innerHTML='clicked'
+bttn.addEventListener('click', () => para.innerHTML='clicked')
