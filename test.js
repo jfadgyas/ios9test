@@ -3,4 +3,4 @@ const para = document.getElementById('text')
 
 para.innerHTML = 'hello'
 
-bttn.addEventListener('click', () => para.innerHTML='clicked')
+bttn.addEventListener('touchstart', () => para.innerHTML='clicked')
