@@ -4,3 +4,4 @@ const para = document.getElementById('text')
 para.innerHTML = window.navigator.userAgent
 
 bttn.addEventListener('touchstart', function ios9() {para.innerHTML='clicked'})
+console.log('test_ios')
