@@ -4,4 +4,4 @@ const para = document.getElementById('text')
 para.innerHTML = 'hello'
 
 
-document.querySelector('#btn').onclick = ()=>para.innerHTML='clicked'
+document.querySelector('#btn').onclick = para.innerHTML='clicked'
