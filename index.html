@@ -7,6 +7,13 @@
         <script defer type='module' src='./test.js'></script>
         <script defer nomodule src='./test_ios9.js'></script>
         
+          <style>
+               .selection{
+                    color: red;
+               }
+
+          </style>
+
        </head>
        <body>
            <button id='btn'>click</button>
@@ -18,7 +25,7 @@
                 <ul id='albums'></ul>
            </div>
 
-           <select id='time' name='time'>
+           <select class='selection'>
                 <option value='1'>first</option>
                 <option value='2'>second</option>
                 <option value='3'>third</option>
