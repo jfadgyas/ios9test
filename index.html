@@ -27,7 +27,6 @@
                     font-size: 16px;
                     letter-spacing: 2px;
                     text-align: justify;
-                    -webkit-appearance: unset;
                }
 
           </style>
@@ -49,10 +48,19 @@
                 <option value='3'>third</option>
            </select>
            
-           <select size='5' style='-webkit-appearance: listbox;'>
-                <option style='-webkit-appearance: listitem;'>first</option>
-                <option style='-webkit-appearance: listitem;'>second</option>
-                <option style='-webkit-appearance: listitem;'>third</option>
+           <select size='5'>
+                <optgroup label='111'>
+                     <option>first</option>
+                     <option>second</option>
+                     <option>third</option>
+
+                </optgroup>
+                <optgroup label='222'>
+
+                     <option>first</option>
+                     <option>second</option>
+                     <option>third</option>
+                </optgroup>
            </select>
            
         </body>
