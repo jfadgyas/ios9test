@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Select Drop-Down List with just CSS</title>
+<style>
+.demo select {
+	border: 0 !important;  
+	-webkit-appearance: none;  
+	-moz-appearance: none; 
+	background-image:  linear-gradient(red, yellow);
+
+background: url(img/demo/select-arrow.png) no-repeat 90% center,  linear-gradient(red, yellow);
+	width: 100px; 
+	text-indent: 0.01px; 
+	text-overflow: ""; 
+ 
+	color: red;
+	border-radius: 15px;
+	padding: 5px;
+	box-shadow: inset 0 0 5px rgba(000,000,000, 0.5);
+}
+.demo select.balck {
+	background-color: #000;
+}
+.demo select.option3 {
+	border-radius: 10px 0;
+}
+</style>
+</head>
+
+<body>
+<h1>Default Select Drop-Down List with just CSS</h1>
+<form class="demo">
+		<select size='5'>
+				<option>CSS</option>
+				<option>HTML </option>
+				<option>HTML 5</option>
+		</select>
+		<select class="balck">
+				<option>CSS</option>
+				<option>HTML </option>
+				<option>HTML 5</option>
+		</select>
+		<select class="option3">
+				<option>CSS</option>
+				<option>HTML </option>
+				<option>HTML 5</option>
+		</select>
+</form>
+</section>
+</body>
+</html>
