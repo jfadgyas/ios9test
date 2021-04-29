@@ -8,13 +8,17 @@
         <script defer nomodule src='./test_ios9.js'></script>
         
           <style>
-               .cont{
+               .container{
                     display:flex;
+                    flex-direction: column;
                }
-               .img{
+               .container__right{
+                    width: 50vw;
+               }
+               .container__photo{
                     width: 50%;
                     height: 50%;
-                    border: 6px solid red;
+                    border: 6px solid aqua;
                     border-radius: 50%;
                }
           </style>
@@ -29,8 +33,14 @@
                 <img id='profile' src=''>
                 <ul id='albums'></ul>
            </div>
-           <div class='cont'>
-                <img class='img' src='P.jpg' alt='me'/>
-           </div>
+
+           <article id='hero' class='container'>
+               
+               <div class='container container__right'>
+                    <img class='container__photo' src='P.jpg' alt='me'/>
+                    
+               </div>
+          </article>
+           
         </body>
 </html>
