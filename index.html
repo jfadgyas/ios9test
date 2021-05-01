@@ -8,20 +8,23 @@
         <script defer nomodule src='./test_ios9.js'></script>
         
           <style>
-               /* .container{
+               .container{
                     display:flex;
-               } */
-               .container__right{
-                    /* flex-direction: column; */
-                    background: grey;
-                    width: 50vw;
-                    height: 300px;
+                    align-items: center;
                }
-               .container__photo{
-                    width: 50%;
-                    height: auto;
-                    border: 6px solid royalblue;
-                    border-radius: 50%;
+               .c-left{
+                    border: 1px solid red;
+                    gap: 5em;
+                    align-self: flex-start;
+               }
+               p{
+                    padding: 0;
+                    margin: 0;
+               }
+               @media only screen and (min-width: 200px){
+                    body{
+                         background: red;
+                    }
                }
           </style>
 
@@ -37,10 +40,11 @@
            </div>
 
            <article id='hero' class='container'>
-               
-               <div class='container container__right'>
-                    <img class='container__photo' src='P.jpg' alt='me'></img>
-                    
+               <div class='c-left'>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, maxime. Aut fuga suscipit, culpa inventore maiores nesciunt nam asperiores cum quaerat dolores iusto deserunt esse consectetur velit ratione a ipsa autem earum saepe delectus cumque libero sed? Officiis laudantium dolore corrupti dignissimos est tenetur, autem non, praesentium quisquam facilis aliquid?</p>
+               </div>
+               <div class='c-left'>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sit dolores recusandae quam vitae, labore provident doloribus officia eos eaque ab. Nisi veritatis quas hic sapiente laborum libero esse dolores autem dicta voluptate illum eius illo, tempora maiores tempore temporibus dignissimos blanditiis rerum. Sed eaque debitis rerum dolorum animi aliquid, quaerat illum at repudiandae mollitia modi culpa voluptatibus repellat reprehenderit vero dicta ab ut enim molestias ad! Amet, repellendus voluptatem! ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, maxime. Aut fuga suscipit, culpa inventore maiores nesciunt nam asperiores cum quaerat dolores iusto deserunt esse consectetur velit ratione a ipsa autem earum saepe delectus cumque libero sed? Officiis laudantium dolore corrupti dignissimos est tenetur, autem non, praesentium quisquam facilis aliquid?</p>
                </div>
           </article>
            
