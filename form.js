@@ -8,7 +8,7 @@ const validate = e => {
         console.log(item.validity)
         if (item.validity.valueMissing){
             item.setCustomValidity('hello')
-            item.reportValidity()
+            return item.reportValidity()
         }
         else {
             item.setCustomValidity('')
