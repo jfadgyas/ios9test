@@ -7,13 +7,14 @@ const validate = e => {
     z.map(item => {
         console.log(item.validity)
         if (item.validity.valueMissing){
-            item.setCustomValidity('hello')
-            item.reportValidity()
+            // item.setCustomValidity('hello')
+            // item.reportValidity()
         }
         // else {
         //     item.setCustomValidity('')
         //     item.reportValidity()
         // }
+        item.reportValidity()
     })
 }
 
