@@ -3,7 +3,8 @@
        <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
         <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
-        <script defer type='module' src='./fb_things.js'></script>
+        <!--<script defer type='module' src='./fb_things.js'></script>-->
+        <script defer src='./form.js'></script>
         <script defer type='module' src='./test.js'></script>
         <script defer nomodule src='./test_ios9.js'></script>
         <script>
@@ -48,6 +49,7 @@
                .txtarea{
                     resize: both;
                     overflow: auto;
+                    border: 1px solid black;
                }
           </style>
 
@@ -82,10 +84,11 @@
           </div>
 
           <form id='frm'>
-               <input type='text'>
-               <input type='text'>
-               <input type='text'>
-               <p class='txtarea'>ksjdhkjdsf</p>
+               <input type='text' required>
+               <input type='text' required>
+               <input type='text' required>
+               <textarea class='txtarea'>ksjdhkjdsf</textarea>
+               <button id='send' type='submit'>submit</button>
           </form>
            
         </body>
