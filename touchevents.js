@@ -3,7 +3,7 @@ box = document.querySelector('#dragbox')
 const ts = e => {
     // e.preventDefault()
     console.log('start')
-    box.insertAdjacentHTML('afterstart', e.touches[0].clientX)
+    box.innerHTML= e.touches[0].clientX
 }
 
 const tm = e => {
@@ -15,7 +15,7 @@ const tm = e => {
 const te = e => {
     // e.preventDefault()
     console.log('end')
-    box.insertAdjacentHTML('afterstart', e.touches[0].clientX)
+    box.innerHTML= e.touches[0].clientX
 }
 
 box.addEventListener('touchstart', ts)
