@@ -3,7 +3,7 @@ box = document.querySelector('#dragbox')
 const ts = e => {
     // e.preventDefault()
     console.log('start')
-    box.innerHTML='start'
+    box.insertAdjacentHTML('afterstart', e.touches[0].clientX)
 }
 
 const tm = e => {
@@ -15,7 +15,7 @@ const tm = e => {
 const te = e => {
     // e.preventDefault()
     console.log('end')
-    box.innerHTML='end'
+    box.insertAdjacentHTML('afterstart', e.touches[0].clientX)
 }
 
 box.addEventListener('touchstart', ts)
@@ -23,4 +23,4 @@ box.addEventListener('touchend', te)
 box.addEventListener('touchmove', tm)
 box.addEventListener('mousedown', ts)
 box.addEventListener('mouseup', te)
-box.addEventListener('mousemove', tm)
+// box.addEventListener('mousemove', tm)
