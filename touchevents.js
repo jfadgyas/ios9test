@@ -18,9 +18,9 @@ const te = e => {
     box.innerHTML='end'
 }
 
-box.addEventListener('touchstart', (e) => ts(e))
-box.addEventListener('touchend', (e) => te(e))
-box.addEventListener('touchmove', (e) => tm(e))
-box.addEventListener('mousedown', (e) => ts(e))
-box.addEventListener('mouseup', (e) => te(e))
-box.addEventListener('mousemove', (e) => tm(e))
+box.addEventListener('touchstart', ts)
+box.addEventListener('touchend', te)
+box.addEventListener('touchmove', tm)
+box.addEventListener('mousedown', ts)
+box.addEventListener('mouseup', te)
+box.addEventListener('mousemove', tm)
