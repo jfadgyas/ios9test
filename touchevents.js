@@ -1,7 +1,7 @@
 box = document.querySelector('#dragbox')
 
 const ts = e => {
-    // e.preventDefault()
+    e.preventDefault()
     console.log('start')
     console.log(e)
     box.innerHTML= e.touches[0].clientX
