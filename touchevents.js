@@ -10,7 +10,7 @@ const ts = e => {
 const tm = e => {
     // e.preventDefault()
     console.log('move')
-    box.innerHTML='move'
+    // box.innerHTML='move'
 }
 
 const te = e => {
