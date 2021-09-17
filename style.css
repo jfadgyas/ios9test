@@ -1,0 +1,65 @@
+html:lang(en) :not(:lang(en)),
+html:lang(nl) :not(:lang(nl)),
+html:lang(hu) :not(:lang(hu)) {
+  display: none;
+}
+
+.bar {
+  border: 1px solid orangered;
+  width: 40%;
+  height: 3em;
+}
+
+.bar:hover .item:nth-child(1) {
+  -webkit-transition: -webkit-transform 500ms 150ms;
+  transition: -webkit-transform 500ms 150ms;
+  transition: transform 500ms 150ms;
+  transition: transform 500ms 150ms, -webkit-transform 500ms 150ms;
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
+  color: lightsalmon;
+}
+
+.bar:hover .item:nth-child(2) {
+  -webkit-transition: -webkit-transform 500ms 300ms;
+  transition: -webkit-transform 500ms 300ms;
+  transition: transform 500ms 300ms;
+  transition: transform 500ms 300ms, -webkit-transform 500ms 300ms;
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
+  color: lightsalmon;
+}
+
+.bar:hover .item:nth-child(3) {
+  -webkit-transition: -webkit-transform 500ms 450ms;
+  transition: -webkit-transform 500ms 450ms;
+  transition: transform 500ms 450ms;
+  transition: transform 500ms 450ms, -webkit-transform 500ms 450ms;
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
+  color: lightsalmon;
+}
+
+.list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style: none;
+}
+
+.hide {
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
+}
+
+.item {
+  color: #1e66ec;
+}
+
+table {
+  margin-top: 4em;
+  font-size: 10px;
+}
+/*# sourceMappingURL=style.css.map */

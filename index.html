@@ -2,6 +2,7 @@
 <html lang='en'>
        <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+        <link rel="stylesheet" href="style.css">
         <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
         <!--<script defer type='module' src='./fb_things.js'></script>-->
         <script defer src='./form.js'></script>
@@ -14,68 +15,6 @@
                   document.documentElement.setAttribute('lang', langSelector.value)
              }
         </script>
-          <style>
-               body{
-                    margin: 0;
-                    padding: 0;
-               }
-               .container{
-                    display:flex;
-                    flex-direction: column;
-                    /* align-items: center; */
-                    border: 2px solid lightsalmon;
-                    background: lightskyblue;
-                    /* position: relative; */
-                    /* height: 70%; */
-               }
-               .c-left{
-                    border: 1px solid red;
-                    gap: 5em;
-                    /* flex-grow: 1 0 auto; */
-                    /* align-self: flex-start; */
-                    
-               }
-               html:lang(en) :not(:lang(en)),
-               html:lang(nl) :not(:lang(nl)),
-               html:lang(hu) :not(:lang(hu)){
-                    display: none;
-               }
-               p{
-                    padding: 0;
-                    margin: 0;
-               }
-               .txtarea{
-                    resize: both;
-                    overflow: auto;
-                    border: 1px solid black;
-               }
-               #dragbox{
-                    margin: 0;
-                    padding: 0;
-                    display: flex;
-                    flex-direction: column;
-                    position: relative;
-                    /* background-image: url('P.jpg'); */
-                    /* background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1)); */
-                    overflow: hidden;
-                    width: 100%;
-                    height: 80vh;
-                    box-shadow: 2px 2px 6px magenta inset;
-               }
-               .wrap0{
-                    position: absolute;
-                    top: 3em;
-                    right: -10%;
-               }
-               .wrap1{
-                    position: absolute;
-                    bottom: -10%;
-               }
-               img{
-                    width: 190px;
-                    height: auto;
-               }
-          </style>
 
        </head>
        <body tabIndex=0>
@@ -83,11 +22,6 @@
 
            <p id='text'>zzz</p>
            <div id='divclick'>this is a div</div>
-           <div id='fb_things'>
-                <p id='fb_name'></p>
-                <img id='profile' src=''>
-                <ul id='albums'></ul>
-           </div>
 
            <select name='langSelector' onChange='langChange(this)'>
                <option value='en'>EN</option>
@@ -95,30 +29,154 @@
                <option value='hu'>HU</option>
           </select>
 
-           <article id='hero' class='container'>
-               <div lang='en' class='c-left'>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.  delectus cumque libero sed? Officiis laudantium dolore corrupti dignissimos est tenetur, autem non, praesentium quisquam facilis aliquid?</p>
-               </div>
-               <div lang='hu' class='c-left'>
-                    <p>HUNGARIAN sit amet consectetur adipisicing elit. Iusto explicabo corporis laborum deserunt accusamus recusandae cumque, beatae nihil harum rerum sit temporibus cum commodi ut eligendi laudantium in ullam tempore incidunt pariatur consectetur itaque culpa inventore? Quo, distinctio id? Hic nihil aspernatur, ut quidem ducimus praesentium eveniet debitis laboriosam, molestiae mollitia minima at repellat. Nisi necessitatibus cupiditate architecto, expedita quaerat laudantium eaque doloribus voluptates amet cumque provident sed deleniti maiores suscipit quod. Aliquam consectetur eaque tempora quasi, animi repudiandae velit id nemo veritatis, culpa aspernatur laborum hic inventore impedit? Quae necessitatibus, sapiente non atque placeat commodi quas quaerat nam temporibus.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, maxime. Aut fuga suscipit, culpa inventore maiores nesciunt nam asperiores cum quaerat dolores iusto deserunt esse consectetur velit ratione a ipsa autem earum saepe delectus cumque libero sed? Officiis laudantium dolore corrupti dignissimos est tenetur, autem non, praesentium quisquam facilis aliquid?</p>
-               </div>
-          </article>
-          <div lang='nl' class='c-left second'>
-               <p>Nederlands Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sit dolores recusandae quam vitae, labore provident doloribus officia eos eaque ab. Nisi veritatis quas hic sapiente laborum libero esse dolores autem dicta voluptate illum eius illo, tempora maiores tempore temporibus dignissimos blanditiis rerum. Sed eaque debitis rerum dolorum animi aliquid, quaerat illum at repudiandae mollitia modi culpa voluptatibus repellat reprehenderit vero dicta ab ut enim molestias ad! Amet, repellendus voluptatem! ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, maxime. Aut fuga suscipit, culpa inventore maiores nesciunt nam asperiores cum quaerat dolores iusto deserunt esse consectetur velit ratione a ipsa autem earum saepe delectus cumque libero sed? Officiis laudantium dolore corrupti dignissimos est tenetur, autem non, praesentium quisquam facilis aliquid?</p>
+          <div class='bar'>
+               <ul id='list1' class='list'>
+                    <li class='item'>111</li>
+                    <li class='item'>222</li>
+                    <li class='item'>333</li>
+               </ul>
+               <ul id='list2' class='list'>
+                    <li class='item'>AAA</li>
+                    <li class='item'>BBB</li>
+                    <li class='item'>CCC</li>
+               </ul>
           </div>
-
-          <div id='dragbox'>swipe test box
-               <div class='wrap0'>
-                    <p>blabla</p>
-                    <img src='P.jpg'/>
-
-               </div>
-               <div class='wrap1'>
-                    <p>blabla</p>
-                    <img src='P.jpg'/>
-               </div>
-          </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.  delectus cumque libero sed? Officiis laudantium dolore corrupti dignissimos est tenetur, autem non, praesentium quisquam facilis aliquid?</p>
-
+          
+          <table>
+               <thead>
+                   <tr>
+                       <th>
+                           Hány gyermeke van?
+                       </th>
+                       <th>
+                           Új lakás vagy ház vásárlás vagy építés
+                       </th>
+                       <th>
+                           Használt lakás vagy ház vásárlás vagy bővítés
+                       </th>
+                   </tr>
+                   <tr>
+                       <th>
+                       </th>
+                       <th>
+                           Támogatás (Ft)
+                       </th>
+                       <th>
+                           Hitel (Ft)
+                       </th>
+                       <th>
+                           Alapterület (m2)
+                       </th>
+                       <th>
+                           Támogatás (Ft)
+                       </th>
+                       <th>
+                           Hitel (Ft)
+                       </th>
+                       <th>
+                           Alapterülett (m2)
+                       </th>
+                   </tr>
+               </thead>
+               <tbody>
+                   <tr>
+                       <td>
+                           1 gyerek
+                       </td>
+                       <td>
+                           600 000
+                       </td>
+                       <td>
+                           ---
+                       </td>
+                       <td>
+                           Lakás: min. 40
+                           Ház: min. 70
+                       </td>
+                       <td>
+                           600 000
+                       </td>
+                       <td>
+                           ---
+                       </td>
+                       <td>
+                           40
+                       </td>
+                   </tr>
+                   <tr>
+                       <td>
+                           2 gyerek
+                       </td>
+                       <td>
+                           2 600 000
+                       </td>
+                       <td>
+                           10 000 000
+                       </td>
+                       <td>
+                           Lakás: min. 50
+                           Ház: min. 80
+                       </td>
+                       <td>
+                           1 430 000
+                       </td>
+                       <td>
+                           10 000 000
+                       </td>
+                       <td>
+                           50
+                       </td>
+                   </tr>
+                   <tr>
+                       <td>
+                           3 gyerek
+                       </td>
+                       <td>
+                           10 000 000
+                       </td>
+                       <td>
+                           15 000 000
+                       </td>
+                       <td>
+                           Lakás: min. 60
+                           Ház: min. 90
+                       </td>
+                       <td>
+                           2 200 000
+                       </td>
+                       <td>
+                           15 000 000
+                       </td>
+                       <td>
+                           60
+                       </td>
+                   </tr>
+                   <tr>
+                       <td>
+                           4 gyerek
+                       </td>
+                       <td>
+                           10 000 000
+                       </td>
+                       <td>
+                           15 000 000
+                       </td>
+                       <td>
+                           Lakás: min. 60
+                           Ház: min. 90
+                       </td>
+                       <td>
+                           2 750 000
+                       </td>
+                       <td>
+                           10 500 000
+                       </td>
+                       <td>
+                           70
+                       </td>
+                   </tr>
+               </tbody>
+           </table>
+          
         </body>
 </html>

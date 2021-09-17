@@ -1,0 +1,45 @@
+html:lang(en) :not(:lang(en)),
+html:lang(nl) :not(:lang(nl)),
+html:lang(hu) :not(:lang(hu)){
+    display: none;
+}
+
+@mixin transition{
+    @for $item from 1 through 3 {
+        .item:nth-child(#{$item}){
+            transition: transform 500ms #{$item * 150}ms;
+            transform: translateY(40px);
+            color: lightsalmon;
+        }
+    }
+}
+
+.bar{
+    border: 1px solid orangered;
+    width: 40%;
+    height: 3em;
+    // overflow: hidden;
+    &:hover{
+        @include transition;
+    }
+}
+
+.list{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    // transition: 200ms;
+}
+.hide{
+    transform: translateY(40px);
+}
+
+.item{
+    color: rgb(30, 102, 236);
+}
+
+
+table{
+    margin-top: 4em;
+    font-size: 10px;
+}
