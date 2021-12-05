@@ -122,4 +122,8 @@ svg {
   -webkit-transform: rotateZ(-180deg);
           transform: rotateZ(-180deg);
 }
+
+table, td, th {
+  border: 1px solid salmon;
+}
 /*# sourceMappingURL=style.css.map */
