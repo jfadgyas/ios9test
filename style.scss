@@ -6,4 +6,7 @@ html:lang(hu) :not(:lang(hu)){
 
 input{
     background: lightpink;
+    &:-webkit-autofill{
+        background: lightgreen;
+    }
 }

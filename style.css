@@ -7,4 +7,8 @@ html:lang(hu) :not(:lang(hu)) {
 input {
   background: lightpink;
 }
+
+input:-webkit-autofill {
+  background: lightgreen;
+}
 /*# sourceMappingURL=style.css.map */
