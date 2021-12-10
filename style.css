@@ -10,7 +10,9 @@ input {
 }
 
 input:-webkit-autofill {
+  -webkit-box-shadow: none;
   -webkit-transition: background-color 500ms ease-in-out 0s;
   transition: background-color 500ms ease-in-out 0s;
+  background-color: transparent;
 }
 /*# sourceMappingURL=style.css.map */
