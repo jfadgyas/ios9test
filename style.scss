@@ -10,7 +10,7 @@ input{
 }
 input:-webkit-autofill{
     // border: none;
-      -webkit-box-shadow: none;//0 0 0px 1000px #000 inset;
+    //   -webkit-box-shadow: none;//0 0 0px 1000px #000 inset;
       transition: background-color 500ms ease-in-out 0s;
-    background-color: transparent;
+    // background-color: transparent;
 }
