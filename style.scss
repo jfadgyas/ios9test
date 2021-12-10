@@ -4,20 +4,21 @@ html:lang(hu) :not(:lang(hu)){
     display: none;
 }
 
-input{
+input, input:-webkit-autofill{
     background: lightpink;
     border: 1px solid red;
-}
-input:-webkit-autofill{
     animation: autofill 1s both;
-    // border: none;
-    //   -webkit-box-shadow: none;//0 0 0px 1000px #000 inset;
-    //   transition: background-color 500ms ease-in-out 0s;
-    // background-color: transparent;
 }
+// input:-webkit-autofill{
+//     animation: autofill 1s both;
+//     // border: none;
+//     //   -webkit-box-shadow: none;//0 0 0px 1000px #000 inset;
+//     //   transition: background-color 500ms ease-in-out 0s;
+//     // background-color: transparent;
+// }
 
 @-webkit-keyframes autofill{
     0%, 100%{
-        background: transparent
+        background: transparent;
     }
 }

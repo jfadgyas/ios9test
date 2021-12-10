@@ -4,12 +4,9 @@ html:lang(hu) :not(:lang(hu)) {
   display: none;
 }
 
-input {
+input, input:-webkit-autofill {
   background: lightpink;
   border: 1px solid red;
-}
-
-input:-webkit-autofill {
   -webkit-animation: autofill 1s both;
           animation: autofill 1s both;
 }
