@@ -10,7 +10,13 @@ input {
 }
 
 input:-webkit-autofill {
-  -webkit-transition: background-color 500ms ease-in-out 0s;
-  transition: background-color 500ms ease-in-out 0s;
+  -webkit-animation: autofill 1s both;
+          animation: autofill 1s both;
+}
+
+@-webkit-keyframes autofill {
+  0%, 100% {
+    background: transparent;
+  }
 }
 /*# sourceMappingURL=style.css.map */
