@@ -6,9 +6,11 @@ html:lang(hu) :not(:lang(hu)){
 
 input{
     background: lightpink;
+    border: 1px solid red;
 }
 input:-webkit-autofill{
     // border: none;
-//   -webkit-box-shadow: 0 0 0px 1000px #000 inset;
-  transition: background-color 5000s ease-in-out 0s;
+    //   -webkit-box-shadow: 0 0 0px 1000px #000 inset;
+    //   transition: background-color 5000s ease-in-out 0s;
+    background: lightpink;
 }
