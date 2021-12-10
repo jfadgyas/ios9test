@@ -10,6 +10,7 @@ input {
 }
 
 input:-webkit-autofill {
-  background-color: lightpink;
+  -webkit-transition: background-color 500ms ease-in-out 0s;
+  transition: background-color 500ms ease-in-out 0s;
 }
 /*# sourceMappingURL=style.css.map */
