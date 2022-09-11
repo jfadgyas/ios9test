@@ -4,21 +4,142 @@ html:lang(hu) :not(:lang(hu)){
     display: none;
 }
 
-input, input:-webkit-autofill{
-    background: lightpink;
-    border: 1px solid red;
-    animation: autofill 1s both;
-}
-// input:-webkit-autofill{
+// Autofill color change
+// input, input:-webkit-autofill{
+//     background: lightpink;
+//     border: 1px solid red;
 //     animation: autofill 1s both;
-//     // border: none;
-//     //   -webkit-box-shadow: none;//0 0 0px 1000px #000 inset;
-//     //   transition: background-color 500ms ease-in-out 0s;
-//     // background-color: transparent;
 // }
 
-@-webkit-keyframes autofill{
-    0%, 100%{
-        background: lightpink;
+// @-webkit-keyframes autofill{
+//     0%, 100%{
+//         background: lightpink;
+//     }
+// }
+
+body{
+    background: lightpink;
+}
+
+.container{
+    border: 1px solid red;
+    list-style: none;
+    padding: 0.5em
+}
+
+.sor{
+    display: grid;
+    // grid-template-columns: repeat(4, fit-content(60%));// 1fr;
+    grid-template-columns: minmax(3ch, 30%) minmax(3em, 6em) minmax(2em, 5em) minmax(2em, 5em);
+}
+
+.cella{
+    border: 1px dotted orchid;
+    padding: 0.5em;
+    overflow: hidden;
+    white-space: nowrap;
+    // text-overflow: ellipsis;
+    // transition: 300ms;
+    scroll-behavior: smooth;
+}
+
+span{
+    display: inline-block;
+}
+
+.animate{
+    animation: scrolltext 3000ms alternate infinite;
+}
+
+@keyframes scrolltext {
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(-20%);
+    }
+}
+
+.flexcont{
+    display: flex;
+}
+.flex{
+    border: 1px solid rgb(54, 91, 194);
+    display: flex;
+    &:not(&:nth-child(1)){
+        flex-grow: 1;
+    }
+}
+.fix{
+    // display: block;
+    width: 40%;
+    padding: 0.5em;
+}
+.fill{
+    width: 100%;
+    padding: 0.5em;
+    background: greenyellow;
+
+}
+
+// Animated hidden row
+table{
+    border-collapse: collapse;
+}
+tr{
+    background: #eee;
+}
+td{
+    padding: 0;
+    border: 1px solid cyan;
+}
+tr.hidden .wrapper{
+    max-height: 0;
+    transform: scaleY(0);
+}
+.wrapper{
+    max-height: 100px;
+    box-sizing: border-box;
+    overflow: hidden;
+    transform-origin: top;
+    transition: 1350ms;   
+    transform: scaleY(100%);
+}
+// End animated hidden row
+
+.productlist{
+    list-style: none;
+    padding: 0;
+    background: lightskyblue;
+    font-size: 14px;
+    &__item{
+        position: relative;
+        &:nth-child(odd){
+            background: darken(lightskyblue, 10%);
+        }
+    }
+    &__desc{
+        display: flex;
+        justify-content: space-evenly;
+        border: 1px solid red;
+        transition: 300ms;
+        &.moved{
+            translate: -20%;
+            & ~ .productlist__floating{
+                scale: 1;
+            }
+        }
+    }
+    &__floating{
+        position: absolute;
+        right: 0;
+        top: 0;
+        transition: 300ms;
+        scale: 0 100%;
+        transform-origin: right;
+    }
+    &__btn{
+        width: 54px;
+        height: 46px;
     }
 }
